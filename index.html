@@ -31,12 +31,12 @@
     h2 { font-size:21px; margin:0 0 16px; letter-spacing:-.02em; } h2:after { content:""; display:block; width:37px; height:3px; background:var(--accent); margin-top:7px; }
     .schedule { background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
     .class { padding:19px 21px; display:grid; grid-template-columns:78px 1fr auto; gap:17px; align-items:center; border-bottom:1px solid var(--line); }
-    .class:last-child { border-bottom:0; }.date { color:var(--blue); font-weight:700; font-size:14px; }.class h3 { margin:0; font-size:17px; }.class p { margin:2px 0 0; color:var(--muted); font-size:14px; }
+    .class:last-child { border-bottom:0; }.date { color:var(--blue); font-weight:700; font-size:17px; }.class h3 { margin:0; font-size:17px; }.class p { margin:2px 0 0; color:var(--muted); font-size:14px; }
     .file { text-decoration:none; display:inline-flex; align-items:center; gap:7px; color:var(--blue); border:1px solid #b9d0f6; border-radius:7px; padding:5px 9px; font-size:13px; font-weight:600; }.file:hover { background:#edf4ff; }
     .side-card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:21px; margin-bottom:18px; }.side-card h3 { margin:0 0 10px; font-size:16px; }.side-card p,.side-card li { color:var(--muted); font-size:15px; }.side-card p { margin:0; }.side-card ul { padding-left:19px; margin:0; }.contact { color:var(--blue); font-family:ui-monospace,"Cascadia Mono",monospace; font-size:13px; user-select:all; }
     .resources { display:grid; grid-template-columns:repeat(2,1fr); gap:15px; }.resource { background:#fff; border:1px solid var(--line); border-radius:11px; padding:18px; text-decoration:none; transition:transform .15s,box-shadow .15s; }.resource:hover { transform:translateY(-2px); box-shadow:0 7px 20px #213a6720; }.resource strong { display:block; font-size:16px; }.resource span { color:var(--muted); font-size:13px; }
     footer { border-top:1px solid var(--line); color:var(--muted); font-size:13px; }.foot { max-width:1120px; margin:auto; padding:25px 28px; display:flex; justify-content:space-between; gap:14px; }
-    @media (max-width:760px) { nav { display:none; }.hero-inner { min-height:260px; }.layout { grid-template-columns:1fr; }.class { grid-template-columns:65px 1fr; }.file { grid-column:2; justify-self:start; }.resources { grid-template-columns:1fr; }.foot { display:block; }.hero-inner:after { right:-130px; } }
+    @media (max-width:760px) { nav { display:none; }.hero-inner { min-height:260px; }.layout { grid-template-columns:1fr; }.class { grid-template-columns:85px 1fr; }.file { grid-column:2; justify-self:start; }.resources { grid-template-columns:1fr; }.foot { display:block; }.hero-inner:after { right:-130px; } }
   </style>
 </head>
 <body>
@@ -50,7 +50,9 @@
     <div class="notice"><b>通知</b><p>课程资料将在每次课程开始前上传。请加入课程 QQ 群，并将群昵称修改为“实名+学号”。</p></div>
     <div class="layout"><div>
       <section id="courseware"><h2>一、课件下载</h2><div class="schedule">
-        <article class="class"><div class="date">课程课件</div><div><h3>暂无课件</h3><p>课件将在课程开始前发布。</p></div><span class="file">待上传</span></article>
+        <article class="class"><div class="date">课程简介</div><div><h3>课程简介</h3><p>课程基本信息与教学安排。</p></div><a class="file" href="materials/课程简介.pdf" download>下载 PDF</a></article>
+        <article class="class"><div class="date">参考资料</div><div><h3>Introduction to Digital Speech Processing</h3><p>数字语音处理参考资料。</p></div><a class="file" href="materials/参考资料_Introduction%20to%20Digital%20Speech%20Processing.pdf" download>下载 PDF</a></article>
+        <article class="class"><div class="date">第 1 讲</div><div><h3>Chapter 01</h3><p>语音信号处理基础课程课件。</p></div><a class="file" href="materials/Chapter_01.pdf" download>下载 PDF</a></article>
       </div></section>
       <section id="homework"><h2>二、课程作业</h2><div class="schedule">
         <article class="class"><div class="date">课程作业</div><div><h3>暂无作业</h3><p>作业要求与提交说明将在此发布。</p></div><span class="file">待上传</span></article>
@@ -59,7 +61,7 @@
         <article class="class"><div class="date">编程作业</div><div><h3>暂无编程作业</h3><p>编程作业说明、代码与数据将在此发布。</p></div><span class="file">待上传</span></article>
       </div></section>
     </div>
-    <aside id="info"><div class="side-card"><h3>授课教师</h3><ul><li>凌震华<br><span class="contact">zhling@ustc.edu.cn</span><br>西区科技实验楼语音及语言信息处理国家工程实验室 503 室<br>高新校区 1 号学科楼 B507</li><li>戴礼荣<br><span class="contact">lrdai@ustc.edu.cn</span><br>西区科技实验楼语音及语言信息处理国家工程实验室 516 室</li></ul></div><div class="side-card"><h3>助教</h3><ul><li>彭彦涵<br><span class="contact">pengyanhan@mail.ustc.edu.cn</span></li><li>冯其乐<br><span class="contact">fengqile@mail.ustc.edu.cn</span></li></ul></div><div class="side-card"><h3>课程信息</h3><p><strong>QQ群：1108420405</strong><br>请入群后将昵称修改为“实名+学号”。</p><p style="margin-top:10px"><strong>上课地点及时间</strong><br>GT-B111：2(6,7)；5(6,7)</p></div></aside>
+    <aside id="info"><div class="side-card"><h3>授课教师</h3><ul><li>凌震华<br><span class="contact">zhling@ustc.edu.cn</span><br>西区科技实验楼语音及语言信息处理国家工程实验室 503 室<br>高新校区 1 号学科楼 B507</li><li>杜俊<br><span class="contact">jundu@ustc.edu.cn</span><br>西区科技实验楼语音及语言信息处理国家工程实验室 502 室</li></ul></div><div class="side-card"><h3>助教</h3><ul><li>彭彦涵<br><span class="contact">pengyanhan@mail.ustc.edu.cn</span></li><li>冯其乐<br><span class="contact">fengqile@mail.ustc.edu.cn</span></li></ul></div><div class="side-card"><h3>课程信息</h3><p><strong>QQ群：1108420405</strong><br>请入群后将昵称修改为“实名+学号”。</p><p style="margin-top:10px"><strong>上课地点及时间</strong><br>GT-B111：2(6,7)；5(6,7)</p></div></aside>
     </div>
   </main>
   <footer><div class="foot"><span>语音信号处理基础 · 2026 年秋季学期</span><span>最后更新：2026 年 8 月</span></div></footer>
