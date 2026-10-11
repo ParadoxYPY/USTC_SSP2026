@@ -71,5 +71,15 @@
     </div>
   </main>
   <footer><div class="foot"><span>语音信号处理基础 · 2026 年秋季学期</span><span>最后更新：2026 年 9 月</span></div></footer>
+  <script>
+    (() => {
+      const assignment = document.querySelector('#programming .class');
+      if (!assignment) return;
+
+      assignment.querySelector('.date').textContent = '第一次编程作业';
+      const summary = assignment.querySelector('.supplement-list > div');
+      summary.innerHTML = '<h3>第一次编程作业</h3><p>提交方式：线上提交；提交截止时间：10 月 30 日。</p><p>编程作业说明、测试数据与实验报告模板。</p>';
+    })();
+  </script>
 </body>
 </html>
